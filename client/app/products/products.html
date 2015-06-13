@@ -1,26 +1,46 @@
-
 <div class="container">
   <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="row">
-        <div class="col-lg-1">
-          <img src="http://placehold.it/60x60?text=profile pic" class="" style="margin: 5px;margin-top: 10px;">
-          <img src="http://placehold.it/60x60?text=another thing" class="" style="margin: 5px;">
+
+    <div class="col-lg-1" style="padding-right: 0;margin-top: 10px;">
+      <a href="/">
+        <div class="item-m">
+          <i class="fa fa-home" style="margin:auto; color: black;font-size: 5em;"></i>
         </div>
-        <div class="col-lg-2">
-          <ul class="nav nav-pills" style="margin-top: 10px;">
-            <li class="active item-menu"><a href="#">Home</a></li>
-            <li class="item-menu"><a href="#">Menu 1</a></li>
-            <li class="item-menu"><a href="#">Menu 2</a></li>
-            <li class="item-menu"><a href="#">Menu 3</a></li>
-          </ul>
+      </a>
+      <a href="/profile">
+        <div class="item-m">
+          <i class="fa fa-user" style="margin:auto; color: black;font-size: 5em;"></i>
         </div>
-        <div class="col-lg-9">
-          <img src="http://placehold.it/732x500?text=main area" class="" style="margin-top: 10px;">
+      </a>
+      <a href="/travels">
+        <div class="item-m">
+          <i class="fa fa-globe" style="margin:auto; color: black;font-size: 5em;"></i>
         </div>
+      </a>
+      <a href="#">
+        <div class="active">
+          <i class="fa fa-shopping-cart" style="margin:auto; color: black;font-size: 5em;"></i>
+        </div>
+      </a>
+    </div>
+ 
+  <div class="col-lg-11">
+    <div class="MainArea-products" ng-controller="ProductsCtrl">
+
+      <div class="container">
+        <button class="btn btn-active" ng-click="nextProduct()"></button>
+        <div class="card" ng-repeat="item in products">
+          <img class="icon" ng-src="http://www.backcountry.com{{item.skus[0].image.url}}">
+          <h2 class="title">{{ item.title }}</h2>
+          <p class="availabilityStatus">{{item.availabilityStatus }}</p>
+          <p class="price">{{ item.skus[0].listPrice | currency }}</p>
+        </div>
+
       </div>
     </div>
   </div>
+
+</div>
 </div>
 
 

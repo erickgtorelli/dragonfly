@@ -28,3 +28,20 @@
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
+
+#cart{
+  z-index: 2;
+  position:absolute;
+  right:0;font-size: 18px;
+  margin: 20px 10px 0 0;
+}
+
+.item{
+  text-align: center;
+  background-color: #ccc;
+  margin: 10px 0 5px 0;
+}
+
+.item:hover{
+  background-color: #eee;
+}

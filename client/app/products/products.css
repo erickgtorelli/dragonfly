@@ -1,0 +1,58 @@
+.active{
+  background-color: #ddd;
+}
+.item-m{
+  text-align: center;
+}
+.item-m:hover{
+  background-color: #eee;
+}
+.active{
+  text-align: center;
+}
+#menu{
+  background-color: #ddd;
+  height: 600px;
+  margin-top: 10px;
+}
+
+.productsLabel{
+  overflow: hidden;
+  position: relative;
+  width: 23%;
+  display: inline-block;
+  margin: 0 2px;
+  position: relative;
+
+}
+
+
+.container {
+  margin-bottom: 80px;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 23%;
+  display: inline-block;
+  margin: 0 2px;
+  position: relative;
+}
+
+.btn {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-weight: 200;
+  padding:2px 10px;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  color: rgb(255,80,80);
+  background: rgba(255,80,80,0.25);
+  transition: background 500ms;
+  border: 1px solid rgb(255,80,80);
+}
