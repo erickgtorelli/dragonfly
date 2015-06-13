@@ -15,3 +15,31 @@
   height: 600px;
   margin-top: 10px;
 }
+
+
+.image {
+  position: relative;
+  width: 25px;
+  height: auto;
+}
+
+#image{
+  width: 250px;
+  height: 300px;
+}
+
+.h2-travels {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  color:white;
+}
+
+.h2-travels:hover{
+  color:lightseagreen;
+}
+
+.mini-img{
+  position;
+}

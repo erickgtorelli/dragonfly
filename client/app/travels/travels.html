@@ -7,41 +7,69 @@
         </div>
       </a>
       <a href="/profile">
-      <div class="item-m">
-        <i class="fa fa-user" style="margin:auto; color: black;font-size: 5em;"></i>
-      </div>
-    </a>
-    <a href="#">
-      <div class="active">
-        <i class="fa fa-globe" style="margin:auto; color: black;font-size: 5em;"></i>
-      </div>
-    </a>
-    <a href="/products">
-      <div class="item-m">
-        <i class="fa fa-shopping-cart" style="margin:auto; color: black;font-size: 5em;"></i>
-      </div>
-    </a>
-  </div>
-  <div class="col-lg-2" id="menu">
-    <ul class="nav nav-pills" style="margin-top: 10px;">
-      <li class="active item-menu"><a href="#">Home</a></li>
-      <li class="item-menu"><a href="#">Menu 1</a></li>
-      <li class="item-menu"><a href="#">Menu 2</a></li>
-      <li class="item-menu"><a href="#">Menu 3</a></li>
-    </ul>
-  </div>
-  <div class="col-lg-9">
-    <img src="http://placehold.it/732x500?text=main area" class="" style="margin-top: 10px;">
-  </div>
+        <div class="item-m">
+          <i class="fa fa-user" style="margin:auto; color: black;font-size: 5em;"></i>
+        </div>
+      </a>
+      <a href="#">
+        <div class="active">
+          <i class="fa fa-globe" style="margin:auto; color: black;font-size: 5em;"></i>
+        </div>
+      </a>
+      <a href="/products">
+        <div class="item-m">
+          <i class="fa fa-shopping-cart" style="margin:auto; color: black;font-size: 5em;"></i>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-2" id="menu">
+      <ul class="nav nav-pills" style="margin-top: 10px;">
+        <li class="active item-menu"><a href="#">Home</a></li>
+        <li class="item-menu"><a href="#">Create tour</a></li>
+        <li class="item-menu"><a href="#">Search Tour</a></li>
+        <li class="item-menu"><a href="#">Tour Map</a></li>
+        <li class="item-menu"><a href="#">Calendar</a></li>
+      </ul>
+    </div>
 
-</div>
+    <div class="col-lg-3">
+
+      <div ng-controller="TravelsCtrl">
+        <div ng-repeat="travel in awesomeTravels">
+
+          <div class="image">
+
+            <img id="image" src="{{ travel.img }}" alt=""/>
+
+            <h2 class="photo-title h2-travels" ng-click="toActivities($index)">{{travel.name}}</h2>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <img class="calls-column" src="{{travel.activities[0]}}">
+              </div>
+              <div class="col-sm-6">
+                <img class="calls-column" src="{{travel.activities[1]}}">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6">
+      <iframe width="600" height="450" frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/streetview?location=9.4846%2C-83.4886&key=AIzaSyA_nFjT6Y836HPgEBiNuckSQKZFb4sxmDQ"></iframe>
+
+    </div>
+
+  </div>
 </div>
 
 
 <footer class="footer">
   <div class="container">
-    <p>Angular Fullstack v2.0.13 |
-      <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-      <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+    <p>Dragonfly v0.1
   </div>
 </footer>

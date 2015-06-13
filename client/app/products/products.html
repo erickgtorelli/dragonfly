@@ -23,24 +23,63 @@
         </div>
       </a>
     </div>
- 
-  <div class="col-lg-11">
-    <div class="MainArea-products" ng-controller="ProductsCtrl">
 
-      <div class="container">
-        <button class="btn btn-active" ng-click="nextProduct()"></button>
-        <div class="card" ng-repeat="item in products">
-          <img class="icon" ng-src="http://www.backcountry.com{{item.skus[0].image.url}}">
-          <h2 class="title">{{ item.title }}</h2>
-          <p class="availabilityStatus">{{item.availabilityStatus }}</p>
-          <p class="price">{{ item.skus[0].listPrice | currency }}</p>
+    <div class="col-lg-11">
+      <div class="MainArea-products" ng-controller="ProductsCtrl">
+
+        <div class="row marco">
+          <div class="col-lg-10">
+            <h2><span class="fa-stack fa-lg" style="font-size: 1em;">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+            </span> Cerro Chirripo Trip</h2>
+            <div class="card" ng-repeat="item in products">
+              <img class="icon" ng-src="http://www.backcountry.com{{item.skus[0].image.url}}" style="width: 185px;height: auto">
+
+              <h2 class="title">{{ item.title }}</h2>
+
+              <p class="availabilityStatus">{{item.availabilityStatus }}</p>
+
+              <p class="price">{{ item.skus[0].listPrice | currency }}</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <a class="btn btn-default" ng-click="nextProduct()">
+              <i class="fa fa-caret-right fa-lg"></i></a>
+          </div>
+
+        </div>
+
+        <div class="row marco">
+
+          <div class="col-lg-10">
+            <h2><span class="fa-stack fa-lg" style="font-size: 1em;">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+            </span> Arenal Volcano Trip</h2>
+            <div class="card" ng-repeat="item in products">
+              <img class="icon" ng-src="http://www.backcountry.com{{item.skus[0].image.url}}" style="width: 185px;height: auto">
+
+              <h2 class="title">{{ item.title }}</h2>
+
+              <p class="availabilityStatus">{{item.availabilityStatus }}</p>
+
+              <p class="price">{{ item.skus[0].listPrice | currency }}</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <a class="btn btn-default" ng-click="nextProduct()">
+              <i class="fa fa-caret-right fa-lg"></i></a>
+          </div>
+
         </div>
 
       </div>
     </div>
-  </div>
 
-</div>
+  </div>
 </div>
 
 

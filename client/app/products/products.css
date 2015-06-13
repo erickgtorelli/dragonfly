@@ -26,7 +26,6 @@
 
 }
 
-
 .container {
   margin-bottom: 80px;
 }
@@ -55,4 +54,10 @@
   background: rgba(255,80,80,0.25);
   transition: background 500ms;
   border: 1px solid rgb(255,80,80);
+}
+
+.marco{
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 15px;
 }

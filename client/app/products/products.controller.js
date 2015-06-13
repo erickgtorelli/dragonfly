@@ -10,7 +10,7 @@ angular.module('dragonflyApp')
       .success(function(data) {
 
         array = data.products;
-        productsMeta = chunk(array,3);
+        productsMeta = chunk(array,4);
         $scope.products = productsMeta[0];
         current=0;
       });
