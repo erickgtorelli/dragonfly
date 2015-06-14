@@ -1,22 +1,25 @@
 .active{
-  background-color: #ddd;
+  background-color: #007FFF;
 }
 .item-m{
   text-align: center;
 }
 .item-m:hover{
-  background-color: #eee;
+  background-color: #428bca;
 }
 .active{
   text-align: center;
 }
 #menu{
-  background-color: #ddd;
+  background-color: #FFA000;
   height: 600px;
   margin-top: 10px;
 }
 
-
+.item-menu a{
+  font-size: 20px;
+  solid-color: #428bca;
+}
 .image {
   position: relative;
   width: 25px;

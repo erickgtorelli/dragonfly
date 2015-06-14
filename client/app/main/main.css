@@ -38,10 +38,10 @@
 
 .item{
   text-align: center;
-  background-color: #ccc;
+  background-color: #0059B2;
   margin: 10px 0 5px 0;
 }
 
 .item:hover{
-  background-color: #eee;
+  background-color: #007FFF;
 }

@@ -19,5 +19,9 @@ angular.module('dragonflyApp')
     $scope.toActivities = function($index) {
 
     }
+        $scope.custom = true;
+        $scope.toggleCustom = function($index) {
+          $scope.custom = $scope.custom === false ? true: false;
+        };
 
   });

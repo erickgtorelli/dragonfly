@@ -41,14 +41,14 @@
 
             <img id="image" src="{{ travel.img }}" alt=""/>
 
-            <h2 class="photo-title h2-travels" ng-click="toActivities($index)">{{travel.name}}</h2>
+            <h2 class="photo-title h2-travels" ng-click="toggleCustom($index)">{{travel.name}}</h2>
 
             <div class="row">
               <div class="col-sm-6">
-                <img class="calls-column" src="{{travel.activities[0]}}">
+                <img class="calls-column" src="{{travel.activities[0]}}" ng-hide="custom">
               </div>
               <div class="col-sm-6">
-                <img class="calls-column" src="{{travel.activities[1]}}">
+                <img class="calls-column" src="{{travel.activities[1]}}" ng-hide="custom">
               </div>
             </div>
 
@@ -59,7 +59,7 @@
     </div>
 
     <div class="col-lg-6">
-      <iframe width="600" height="450" frameborder="0" style="border:0"
+      <iframe  width="600" height="450" frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/streetview?location=9.4846%2C-83.4886&key=AIzaSyA_nFjT6Y836HPgEBiNuckSQKZFb4sxmDQ"></iframe>
 
     </div>
